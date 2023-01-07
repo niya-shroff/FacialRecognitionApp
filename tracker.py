@@ -22,9 +22,7 @@ for img in images:
     encode = face_recognition.face_encodings(imgN)[0]
     encodeList.append(encode)
 
-print('Encoding Finished')
-
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while True:
     success, img = cap.read()
